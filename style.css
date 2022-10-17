@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body header h1 {
+  margin: 0;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 50px;
+  color: #287233;
+}
+body header nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid black;
+}
+body header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+body header nav ul li {
+  margin-right: 25px;
+  font-family: "Space Mono", monospace;
+}
+body .descripcion .definicion {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 50px 500px;
+}
+body .descripcion .definicion h2 {
+  grid-column: 1/span2;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+  color: #287233;
+}
+body .descripcion .definicion img {
+  grid-column: 1;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+}
+body .descripcion .definicion p {
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 0;
+  text-align: justify;
+  font-family: "Space Mono", monospace;
+  font-size: 26px;
+}
+body .descripcion .servicios {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 50px 50px 300px;
+  justify-content: center;
+}
+body .descripcion .servicios h2 {
+  margin-top: 50px;
+  grid-column: 1/span3;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+  color: #287233;
+}
+body .descripcion .servicios #txtReserva {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+}
+body .descripcion .servicios #txtElige {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+}
+body .descripcion .servicios #txtCalifica {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: center;
+  grid-column: 3;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+}
+body .descripcion .servicios #imgReserva {
+  margin-top: 50px;
+  grid-column: 1;
+  grid-row: 3;
+  height: 100%;
+  width: 100%;
+  border-style: groove;
+}
+body .descripcion .servicios #imgElige {
+  margin-top: 50px;
+  grid-column: 2;
+  grid-row: 3;
+  height: 100%;
+  width: 100%;
+  border-style: groove;
+}
+body .descripcion .servicios #imgCalifica {
+  margin-top: 50px;
+  grid-column: 3;
+  grid-row: 3;
+  height: 100%;
+  width: 100%;
+  border-style: groove;
+}/*# sourceMappingURL=style.css.map */
