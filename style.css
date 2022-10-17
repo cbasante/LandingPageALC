@@ -13,7 +13,6 @@ a {
 }
 
 body header h1 {
-  margin: 0;
   text-align: center;
   font-family: "Space Mono", monospace;
   font-size: 50px;
@@ -33,16 +32,17 @@ body header nav ul li {
   margin-right: 25px;
   font-family: "Space Mono", monospace;
 }
-body .descripcion .definicion {
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
+body header nav ul li a {
+  color: black;
+}
+body main .descripcion .definicion {
+  margin: 50px;
   justify-content: center;
   display: grid;
   grid-template-columns: 500px 500px;
   grid-template-rows: 50px 500px;
 }
-body .descripcion .definicion h2 {
+body main .descripcion .definicion h2 {
   grid-column: 1/span2;
   grid-row: 1;
   height: 100%;
@@ -50,34 +50,33 @@ body .descripcion .definicion h2 {
   text-align: center;
   font-family: "Space Mono", monospace;
   font-size: 30px;
-  color: #287233;
+  color: #5EA763;
 }
-body .descripcion .definicion img {
+body main .descripcion .definicion img {
   grid-column: 1;
   grid-row: 2;
   height: 100%;
   width: 100%;
+  border-style: groove;
 }
-body .descripcion .definicion p {
+body main .descripcion .definicion p {
+  margin-left: 20px;
   grid-column: 2;
   grid-row: 2;
   height: 100%;
   width: 100%;
-  margin-left: 20px;
-  margin-top: 0;
   text-align: justify;
   font-family: "Space Mono", monospace;
   font-size: 26px;
 }
-body .descripcion .servicios {
-  margin-top: 50px;
+body main .descripcion .servicios {
+  margin-top: 25px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 50px 50px 300px;
   justify-content: center;
 }
-body .descripcion .servicios h2 {
-  margin-top: 50px;
+body main .descripcion .servicios h2 {
   grid-column: 1/span3;
   grid-row: 1;
   height: 100%;
@@ -85,11 +84,9 @@ body .descripcion .servicios h2 {
   text-align: center;
   font-family: "Space Mono", monospace;
   font-size: 30px;
-  color: #287233;
+  color: #5EA763;
 }
-body .descripcion .servicios #txtReserva {
-  margin-top: 50px;
-  margin-left: 20px;
+body main .descripcion .servicios #txtReserva {
   text-align: center;
   grid-column: 1;
   grid-row: 2;
@@ -98,9 +95,7 @@ body .descripcion .servicios #txtReserva {
   font-family: "Space Mono", monospace;
   font-size: 30px;
 }
-body .descripcion .servicios #txtElige {
-  margin-top: 50px;
-  margin-left: 20px;
+body main .descripcion .servicios #txtElige {
   text-align: center;
   grid-column: 2;
   grid-row: 2;
@@ -109,9 +104,7 @@ body .descripcion .servicios #txtElige {
   font-family: "Space Mono", monospace;
   font-size: 30px;
 }
-body .descripcion .servicios #txtCalifica {
-  margin-top: 50px;
-  margin-left: 20px;
+body main .descripcion .servicios #txtCalifica {
   text-align: center;
   grid-column: 3;
   grid-row: 2;
@@ -120,24 +113,21 @@ body .descripcion .servicios #txtCalifica {
   font-family: "Space Mono", monospace;
   font-size: 30px;
 }
-body .descripcion .servicios #imgReserva {
-  margin-top: 50px;
+body main .descripcion .servicios #imgReserva {
   grid-column: 1;
   grid-row: 3;
   height: 100%;
   width: 100%;
   border-style: groove;
 }
-body .descripcion .servicios #imgElige {
-  margin-top: 50px;
+body main .descripcion .servicios #imgElige {
   grid-column: 2;
   grid-row: 3;
   height: 100%;
   width: 100%;
   border-style: groove;
 }
-body .descripcion .servicios #imgCalifica {
-  margin-top: 50px;
+body main .descripcion .servicios #imgCalifica {
   grid-column: 3;
   grid-row: 3;
   height: 100%;
