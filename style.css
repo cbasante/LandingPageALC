@@ -42,11 +42,9 @@ body footer .foot1 {
 }
 body footer .foot1 a {
   height: 100%;
-  width: 100%;
-  text-align: center;
-  font-family: "Space Mono", monospace;
-  font-size: 20px;
-  color: #287233;
+  height-width: 100%;
+  height-font-family: "Space Mono", monospace;
+  height-font-size: 30px;
 }
 body main .descripcion {
   margin: 50px;
