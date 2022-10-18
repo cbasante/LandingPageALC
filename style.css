@@ -35,17 +35,18 @@ body header nav ul li {
 body header nav ul li a {
   color: black;
 }
-body main .definicion {
-  margin: 50px 0px 50px 0px;
+body main .descripcion {
+  margin: 50px;
   justify-content: center;
   display: grid;
   grid-template-columns: 500px 500px;
   grid-template-rows: 50px 500px;
   grid-gap: 10px;
 }
-body main .definicion h2 {
+body main .descripcion .h2Definicion {
   grid-column: 1/span 2;
-  grid-row: 1;
+}
+body main .descripcion .h2Definicion h2 {
   height: 100%;
   width: 100%;
   text-align: center;
@@ -53,17 +54,13 @@ body main .definicion h2 {
   font-size: 30px;
   color: #5EA763;
 }
-body main .definicion img {
-  grid-column: 1;
-  grid-row: 2;
+body main .descripcion .imgDefinicion img {
   border-style: groove;
   height: 100%;
   width: 100%;
 }
-body main .definicion p {
+body main .descripcion .pDefinicion p {
   margin-left: 20px;
-  grid-column: 2;
-  grid-row: 2;
   height: 100%;
   width: 100%;
   text-align: justify;
@@ -71,15 +68,16 @@ body main .definicion p {
   font-size: 26px;
 }
 body main .servicios {
-  margin-top: 25px;
+  margin: 100px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 50px 50px 300px;
   justify-content: center;
 }
-body main .servicios h2 {
-  grid-column: 1/span3;
-  grid-row: 1;
+body main .servicios .h2Servicios {
+  grid-column: 1/span 3;
+}
+body main .servicios .h2Servicios h2 {
   height: 100%;
   width: 100%;
   text-align: center;
@@ -87,50 +85,44 @@ body main .servicios h2 {
   font-size: 30px;
   color: #5EA763;
 }
-body main .servicios #txtReserva {
+body main .servicios .pReserva {
   text-align: center;
-  grid-column: 1;
-  grid-row: 2;
+}
+body main .servicios .pReserva p {
   height: 100%;
   width: 100%;
   font-family: "Space Mono", monospace;
   font-size: 30px;
 }
-body main .servicios #txtElige {
+body main .servicios .pElige {
   text-align: center;
-  grid-column: 2;
-  grid-row: 2;
+}
+body main .servicios .pElige p {
   height: 100%;
   width: 100%;
   font-family: "Space Mono", monospace;
   font-size: 30px;
 }
-body main .servicios #txtCalifica {
+body main .servicios .pCalifica {
   text-align: center;
-  grid-column: 3;
-  grid-row: 2;
+}
+body main .servicios .pCalifica p {
   height: 100%;
   width: 100%;
   font-family: "Space Mono", monospace;
   font-size: 30px;
 }
-body main .servicios #imgReserva {
-  grid-column: 1;
-  grid-row: 3;
+body main .servicios .imgReserva img {
   height: 100%;
   width: 100%;
   border-style: groove;
 }
-body main .servicios #imgElige {
-  grid-column: 2;
-  grid-row: 3;
+body main .servicios .imgElige img {
   height: 100%;
   width: 100%;
   border-style: groove;
 }
-body main .servicios #imgCalifica {
-  grid-column: 3;
-  grid-row: 3;
+body main .servicios .imgCalifica img {
   height: 100%;
   width: 100%;
   border-style: groove;
@@ -142,31 +134,31 @@ body main .stakeholders {
   grid-template-columns: 500px;
   grid-template-rows: auto 300px 300px;
 }
-body main .stakeholders h2 {
-  grid-column: 1;
-  grid-row: 1;
+body main .stakeholders .h2Stakeholders h2 {
   text-align: center;
   font-family: "Space Mono", monospace;
   font-size: 30px;
   color: #5EA763;
 }
-body main .stakeholders .stkholder1 {
+body main .stakeholders .stakeholder1 {
   grid-column: 1;
   grid-row: 2;
   display: flex;
   align-items: center;
   border: 1px solid black;
 }
-body main .stakeholders #imgStkholder1 {
+body main .stakeholders .imgStakeholder1 {
   grid-column: 1;
   grid-row: 2;
+}
+body main .stakeholders .imgStakeholder1 img {
   height: 100%;
   width: 100%;
   background-size: 100%;
   background-position: center;
   opacity: 0.3;
 }
-body main .stakeholders .stkholder2 {
+body main .stakeholders .stakeholder2 {
   grid-column: 1;
   grid-row: 3;
   display: flex;
@@ -174,9 +166,11 @@ body main .stakeholders .stkholder2 {
   justify-content: flex-end;
   border: 1px solid black;
 }
-body main .stakeholders #imgStkholder2 {
+body main .stakeholders .imgStakeholder2 {
   grid-column: 1;
   grid-row: 3;
+}
+body main .stakeholders .imgStakeholder2 img {
   height: 100%;
   width: 100%;
   background-size: 100%;
@@ -184,98 +178,99 @@ body main .stakeholders #imgStkholder2 {
   opacity: 0.3;
 }
 body main .ventajas {
-  margin-top: 25px;
+  margin: 100px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 50px 50px 300px;
+  grid-template-rows: auto auto auto auto;
   justify-content: center;
-  grid-gap: 5px;
+  grid-gap: 10px;
 }
-body main .ventajas h2 {
+body main .ventajas .h2Ventajas {
+  grid-column: 1/span 3;
+}
+body main .ventajas .h2Ventajas h2 {
+  margin-bottom: 25px;
   text-align: center;
-  grid-column: 2;
-  grid-row: 2;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+  color: #5EA763;
+}
+body main .ventajas .imgVentajas {
+  text-align: center;
+}
+body main .ventajas .titulosVentajas {
+  text-align: center;
+}
+body main .ventajas .pVentajas {
+  text-align: justify;
+  margin-right: 25px;
+  font-family: "Space Mono", monospace;
+}
+body main .contacto {
+  margin: 100px;
+  justify-content: center;
+}
+body main .contacto .h2Contacto h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+  color: #5EA763;
+}
+body main .contacto .pContacto {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body main .contacto .ulContacto {
+  margin: 25px;
+}
+body main .contacto .ulContacto li {
+  margin: 25px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body main .nosotros {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 50px 300px 50px 300px;
+  justify-content: center;
+  grid-gap: 10px;
+}
+body main .nosotros .h2Nosotros {
+  grid-column: 1/span 2;
+  text-align: center;
   height: 100%;
   width: 100%;
   font-family: "Space Mono", monospace;
   font-size: 20px;
+  color: #5EA763;
 }
-body main .ventajas p {
-  margin-right: 25px;
-  font-family: "Space Mono", monospace;
-  text-align: justify;
-}
-body main .ventajas img {
+body main .nosotros .imgNosotros {
   text-align: center;
 }
-body main .acercade {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 50px 50px 300px;
-  justify-content: center;
-  grid-gap: 5px;
-}
-body main .acercade h2 {
-  text-align: center;
-  grid-column: 2;
-  grid-row: 2;
-  height: 100%;
-  width: 100%;
-  font-family: "Space Mono", monospace;
-  font-size: 20px;
-}
-body main .acercade p {
-  margin-right: 25px;
-  font-family: "Space Mono", monospace;
-  text-align: justify;
-}
-body main .acercade #imgChristyan {
-  grid-column: 1;
-  grid-row: 3;
-  height: 500%;
+body main .nosotros .imgNosotros img {
+  height: auto;
   width: 66%;
   border-radius: 300px;
 }
-body main .acercade #imgVictor {
-  grid-column: 2;
-  grid-row: 3;
-  height: 500%;
-  width: 66%;
-  border-radius: 300px;
-}
-body main .contactanos {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 50px 50px 300px;
-  justify-content: center;
-  grid-gap: 5px;
-}
-body main .contactanos p {
-  text-align: left;
-  grid-column: 2;
-  grid-row: 2;
-  height: 100%;
-  width: 100%;
-  font-family: "Space Mono", monospace;
-  font-size: 20px;
-}
-body main .contactanos ul {
-  margin-right: 25px;
-  font-family: "Space Mono", monospace;
-  text-align: justify;
-  font-size: 17px;
-}
-body main .contactanos a {
+body main .nosotros .Nombres {
   text-align: center;
-  grid-column: 2;
-  grid-row: 2;
-  height: 100%;
-  width: 100%;
+}
+body main .nosotros .Nombres p {
   font-family: "Space Mono", monospace;
   font-size: 20px;
-  border: groove;
+  color: #5EA763;
+}
+body main .nosotros .pNosotros {
+  grid-column: 1/span 2;
+}
+body main .nosotros .pNosotros p {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 800px) {
