@@ -24,17 +24,6 @@ body
                     font-family: $letraPrimaria
                     a
                         color: black
-    footer
-        .foot1
-            display: inline-flex
-            align-items: center
-            justify-content: center
-            a
-               height: 100%
-                    width: 100%
-                    font-family: $letraPrimaria
-                    font-size: 30px 
-
     main
         .descripcion
             margin: 50px
@@ -236,6 +225,45 @@ body
                     text-align: center
                     font-family: $letraPrimaria
                     font-size: 20px
+    footer
+        border: 1px solid black
+        margin: 50px
+        display: grid
+        grid-template-columns: 200px 200px 200px 200px 200px
+        grid-template-rows: 50px 130px
+        justify-content: center
+        .foot1
+            p
+                height: 100%
+                width: 100%
+                font-family: $letraPrimaria
+                font-size: 20px 
+            a
+                font-family: $letraPrimaria
+                font-size: 20px 
+        .foot2
+            h3
+                height: 100%
+                width: 100%
+                font-family: $letraPrimaria
+                font-size: 20px 
+            ul
+                font-family: $letraPrimaria
+                font-size: 15px
+        .foot3
+            h3
+                height: 100%
+                width: 100%
+                font-family: $letraPrimaria
+                font-size: 20px 
+            ul
+                font-family: $letraPrimaria
+                font-size: 15px 
+        .foot4
+            margin-top: 70px
+        .foot5
+            p
+            margin-top: 100px
 
 @media screen and (max-width: 800px)
    body
@@ -453,3 +481,5 @@ body
                     p
                         font-size: 15px
                         margin-bottom: 25px
+        footer
+            display: none

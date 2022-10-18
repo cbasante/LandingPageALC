@@ -35,17 +35,6 @@ body header nav ul li {
 body header nav ul li a {
   color: black;
 }
-body footer .foot1 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-body footer .foot1 a {
-  height: 100%;
-  height-width: 100%;
-  height-font-family: "Space Mono", monospace;
-  height-font-size: 30px;
-}
 body main .descripcion {
   margin: 50px;
   justify-content: center;
@@ -283,7 +272,50 @@ body main .nosotros .pNosotros p {
   font-family: "Space Mono", monospace;
   font-size: 20px;
 }
-
+body footer {
+  border: 1px solid black;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 50px 130px;
+  justify-content: center;
+}
+body footer .foot1 p {
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body footer .foot1 a {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body footer .foot2 h3 {
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body footer .foot2 ul {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+}
+body footer .foot3 h3 {
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body footer .foot3 ul {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+}
+body footer .foot4 {
+  margin-top: 70px;
+}
+body footer .foot5 {
+  margin-top: 100px;
+}
 @media screen and (max-width: 800px) {
   body header h1 {
     text-align: center;
@@ -561,5 +593,8 @@ body main .nosotros .pNosotros p {
   body main .nosotros .pNosotros p {
     font-size: 15px;
     margin-bottom: 25px;
+  }
+  body footer {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
