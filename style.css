@@ -182,3 +182,27 @@ body main .stakeholders #imgStkholder2 {
   background-position: center;
   opacity: 0.3;
 }/*# sourceMappingURL=style.css.map */
+
+body main .ventajas {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 50px 50px 300px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+body main .ventajas h2 {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body main .ventajas p {
+  margin-right: 25px;
+  font-family: "Space Mono", monospace;
+  text-align: justify;
+}
