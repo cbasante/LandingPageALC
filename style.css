@@ -36,14 +36,15 @@ body header nav ul li a {
   color: black;
 }
 body main .definicion {
-  margin: 50px;
+  margin: 50px 0px 50px 0px;
   justify-content: center;
   display: grid;
   grid-template-columns: 500px 500px;
   grid-template-rows: 50px 500px;
+  grid-gap: 10px;
 }
 body main .definicion h2 {
-  grid-column: 1/span2;
+  grid-column: 1/span 2;
   grid-row: 1;
   height: 100%;
   width: 100%;
@@ -55,9 +56,9 @@ body main .definicion h2 {
 body main .definicion img {
   grid-column: 1;
   grid-row: 2;
+  border-style: groove;
   height: 100%;
   width: 100%;
-  border-style: groove;
 }
 body main .definicion p {
   margin-left: 20px;
@@ -275,4 +276,149 @@ body main .contactanos a {
   font-family: "Space Mono", monospace;
   font-size: 20px;
   border: groove;
+}
+
+@media screen and (max-width: 800px) {
+  body header h1 {
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    font-size: 25px;
+    color: #287233;
+  }
+  body header nav ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header nav ul li {
+    margin-right: 15px;
+    font-family: "Space Mono", monospace;
+    font-size: 10px;
+  }
+  body header nav ul li a {
+    color: black;
+  }
+  body main .definicion {
+    background: red;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    justify-content: center;
+  }
+  body main .definicion h2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  body main .definicion img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main .definicion p {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main .servicios {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 50px 50px 300px;
+    justify-content: center;
+  }
+  body main .servicios h2 {
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    font-size: 30px;
+    color: #5EA763;
+  }
+  body main .servicios #txtReserva {
+    text-align: center;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    font-size: 30px;
+  }
+  body main .servicios #txtElige {
+    text-align: center;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    font-size: 30px;
+  }
+  body main .servicios #txtCalifica {
+    text-align: center;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    font-size: 30px;
+  }
+  body main .servicios #imgReserva {
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    border-style: groove;
+  }
+  body main .servicios #imgElige {
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    border-style: groove;
+  }
+  body main .servicios #imgCalifica {
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    border-style: groove;
+  }
+  body main .stakeholders {
+    margin: 100px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto 300px 300px;
+  }
+  body main .stakeholders h2 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    font-size: 30px;
+    color: #5EA763;
+  }
+  body main .stakeholders .stkholder1 {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+  }
+  body main .stakeholders #imgStkholder1 {
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.3;
+  }
+  body main .stakeholders .stkholder2 {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid black;
+  }
+  body main .stakeholders #imgStkholder2 {
+    grid-column: 1;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.3;
+  }
 }/*# sourceMappingURL=style.css.map */

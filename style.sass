@@ -26,13 +26,14 @@ body
                         color: black
     main
         .definicion
-            margin: 50px
+            margin: 50px 0px 50px 0px
             justify-content: center
             display: grid
             grid-template-columns: 500px 500px
             grid-template-rows: 50px 500px
+            grid-gap: 10px
             h2
-                grid-column: 1/span2
+                grid-column: 1 /span 2
                 grid-row: 1
                 height: 100%
                 width: 100%
@@ -43,10 +44,11 @@ body
             img
                 grid-column: 1
                 grid-row: 2
+                border-style: groove
                 height: 100%
                 width: 100%
-                border-style: groove
             p
+                
                 margin-left: 20px
                 grid-column: 2
                 grid-row: 2
@@ -235,3 +237,129 @@ body
                 font-family: "Space Mono", monospace
                 font-size: 20px
                 border: groove
+
+@media screen and (max-width: 800px)
+    body
+        header
+            h1
+                text-align: center
+                font-family: $letraPrimaria
+                font-size: 25px
+                color: $colorPrimario
+            nav
+                ul
+                    display: inline-flex
+                    align-items: center
+                    justify-content: center
+                    li
+                        margin-right: 15px
+                        font-family: $letraPrimaria
+                        font-size: 10px
+                        a
+                            color: black
+        main
+            .definicion
+                background: red
+                grid-template-columns: 1fr
+                grid-template-rows: auto 1fr 1fr
+                justify-content: center
+                h2
+                    grid-column: 1
+                    grid-row: 1
+                img
+                    grid-column: 1
+                    grid-row: 2
+                p
+                    grid-column: 1
+                    grid-row: 3
+            .servicios
+                margin-top: 25px
+                display: grid
+                grid-template-rows: 50px 50px 300px
+                justify-content: center
+                h2
+                    grid-row: 1
+                    height: 100%
+                    width: 100%
+                    text-align: center
+                    font-family: $letraPrimaria
+                    font-size: 30px
+                    color: $colorSecundario
+                #txtReserva
+                    text-align: center
+                    grid-row: 2
+                    height: 100%
+                    width: 100%
+                    font-family: $letraPrimaria
+                    font-size: 30px
+                #txtElige
+                    text-align: center
+                    grid-row: 2
+                    height: 100%
+                    width: 100%
+                    font-family: $letraPrimaria
+                    font-size: 30px
+                #txtCalifica
+                    text-align: center
+                    grid-row: 2
+                    height: 100%
+                    width: 100%
+                    font-family: $letraPrimaria
+                    font-size: 30px
+                #imgReserva
+                    grid-row: 3
+                    height: 100%
+                    width: 100%
+                    border-style: groove
+                #imgElige
+                    grid-row: 3
+                    height: 100%
+                    width: 100%
+                    border-style: groove
+                #imgCalifica
+                    grid-row: 3
+                    height: 100%
+                    width: 100%
+                    border-style: groove
+            .stakeholders
+                margin: 100px
+                justify-content: center
+                display: grid
+                grid-template-columns: 500px
+                grid-template-rows: auto 300px 300px
+                h2
+                    grid-column: 1
+                    grid-row: 1
+                    text-align: center
+                    font-family: $letraPrimaria
+                    font-size: 30px
+                    color: $colorSecundario
+                .stkholder1
+                    grid-column: 1
+                    grid-row: 2
+                    display: flex
+                    align-items: center
+                    border: 1px solid black
+                #imgStkholder1
+                    grid-column: 1
+                    grid-row: 2
+                    height: 100%
+                    width: 100%
+                    background-size: 100%
+                    background-position: center
+                    opacity: 0.3
+                .stkholder2
+                    grid-column: 1
+                    grid-row: 3
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    border: 1px solid black
+                #imgStkholder2
+                    grid-column: 1
+                    grid-row: 3
+                    height: 100%
+                    width: 100%
+                    background-size: 100%
+                    background-position: center
+                    opacity: 0.3
