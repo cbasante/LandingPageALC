@@ -181,8 +181,7 @@ body main .stakeholders #imgStkholder2 {
   background-size: 100%;
   background-position: center;
   opacity: 0.3;
-}/*# sourceMappingURL=style.css.map */
-
+}
 body main .ventajas {
   margin-top: 25px;
   display: grid;
@@ -191,7 +190,6 @@ body main .ventajas {
   justify-content: center;
   grid-gap: 5px;
 }
-
 body main .ventajas h2 {
   text-align: center;
   grid-column: 2;
@@ -206,3 +204,64 @@ body main .ventajas p {
   font-family: "Space Mono", monospace;
   text-align: justify;
 }
+body main .ventajas img {
+  text-align: center;
+}
+body main .acercade {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 50px 50px 300px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+body main .acercade h2 {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body main .acercade p {
+  margin-right: 25px;
+  font-family: "Space Mono", monospace;
+  text-align: justify;
+}
+body main .acercade #imgChristyan {
+  grid-column: 1;
+  grid-row: 3;
+  height: 500%;
+  width: 66%;
+  border-radius: 300px;
+}
+body main .acercade #imgVictor {
+  grid-column: 2;
+  grid-row: 3;
+  height: 500%;
+  width: 66%;
+  border-radius: 300px;
+}
+body main .contactanos {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 50px 50px 300px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+body main .contactanos p {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+body main .contactanos ul {
+  margin-right: 25px;
+  font-family: "Space Mono", monospace;
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */
