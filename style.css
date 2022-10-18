@@ -252,7 +252,7 @@ body main .contactanos {
   grid-gap: 5px;
 }
 body main .contactanos p {
-  text-align: center;
+  text-align: left;
   grid-column: 2;
   grid-row: 2;
   height: 100%;
@@ -264,4 +264,15 @@ body main .contactanos ul {
   margin-right: 25px;
   font-family: "Space Mono", monospace;
   text-align: justify;
+  font-size: 17px;
+}
+body main .contactanos a {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  border: groove;
 }/*# sourceMappingURL=style.css.map */
