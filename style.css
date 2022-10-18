@@ -35,6 +35,19 @@ body header nav ul li {
 body header nav ul li a {
   color: black;
 }
+body footer .foot1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .foot1 a {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  color: #287233;
+}
 body main .descripcion {
   margin: 50px;
   justify-content: center;
@@ -276,144 +289,279 @@ body main .nosotros .pNosotros p {
 @media screen and (max-width: 800px) {
   body header h1 {
     text-align: center;
-    font-family: "Space Mono", monospace;
     font-size: 25px;
-    color: #287233;
   }
   body header nav ul {
-    display: inline-flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+    display: inline-flex;
   }
   body header nav ul li {
     margin-right: 15px;
     font-family: "Space Mono", monospace;
-    font-size: 10px;
+    font-size: 9px;
   }
   body header nav ul li a {
     color: black;
   }
-  body main .definicion {
-    background: red;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
+  body main .descripcion {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     justify-content: center;
   }
-  body main .definicion h2 {
+  body main .descripcion .h2Definicion {
     grid-column: 1;
     grid-row: 1;
   }
-  body main .definicion img {
+  body main .descripcion .h2Definicion h2 {
+    font-size: 20px;
+  }
+  body main .descripcion .imgDefinicion {
     grid-column: 1;
     grid-row: 2;
+    text-align: center;
   }
-  body main .definicion p {
+  body main .descripcion .imgDefinicion img {
+    height: 300px;
+    width: 300px;
+  }
+  body main .descripcion .pDefinicion {
     grid-column: 1;
     grid-row: 3;
+    justify-content: center;
+  }
+  body main .descripcion .pDefinicion p {
+    margin-left: 0;
+    font-size: 15px;
   }
   body main .servicios {
-    margin-top: 25px;
-    display: grid;
-    grid-template-rows: 50px 50px 300px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     justify-content: center;
   }
-  body main .servicios h2 {
+  body main .servicios .h2Servicios {
+    grid-column: 1;
     grid-row: 1;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-family: "Space Mono", monospace;
-    font-size: 30px;
-    color: #5EA763;
   }
-  body main .servicios #txtReserva {
-    text-align: center;
+  body main .servicios .h2Servicios h2 {
+    font-size: 20px;
+  }
+  body main .servicios .pReserva {
+    grid-column: 1;
     grid-row: 2;
-    height: 100%;
-    width: 100%;
-    font-family: "Space Mono", monospace;
-    font-size: 30px;
   }
-  body main .servicios #txtElige {
+  body main .servicios .pReserva p {
+    font-size: 15px;
+  }
+  body main .servicios .imgReserva {
+    grid-column: 1;
+    grid-row: 3;
     text-align: center;
-    grid-row: 2;
-    height: 100%;
-    width: 100%;
-    font-family: "Space Mono", monospace;
-    font-size: 30px;
   }
-  body main .servicios #txtCalifica {
+  body main .servicios .imgReserva img {
+    height: 150px;
+    width: 150px;
+  }
+  body main .servicios .pElige {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  body main .servicios .pElige p {
+    font-size: 15px;
+  }
+  body main .servicios .imgElige {
+    grid-column: 1;
+    grid-row: 5;
     text-align: center;
-    grid-row: 2;
-    height: 100%;
-    width: 100%;
-    font-family: "Space Mono", monospace;
-    font-size: 30px;
   }
-  body main .servicios #imgReserva {
-    grid-row: 3;
-    height: 100%;
-    width: 100%;
-    border-style: groove;
+  body main .servicios .imgElige img {
+    height: 150px;
+    width: 150px;
   }
-  body main .servicios #imgElige {
-    grid-row: 3;
-    height: 100%;
-    width: 100%;
-    border-style: groove;
+  body main .servicios .pCalifica {
+    grid-column: 1;
+    grid-row: 6;
   }
-  body main .servicios #imgCalifica {
-    grid-row: 3;
-    height: 100%;
-    width: 100%;
-    border-style: groove;
+  body main .servicios .pCalifica p {
+    font-size: 15px;
+  }
+  body main .servicios .imgCalifica {
+    grid-column: 1;
+    grid-row: 7;
+    text-align: center;
+  }
+  body main .servicios .imgCalifica img {
+    height: 150px;
+    width: 150px;
   }
   body main .stakeholders {
-    margin: 100px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     justify-content: center;
-    display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: auto 300px 300px;
   }
-  body main .stakeholders h2 {
+  body main .stakeholders .h2Stakeholders h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  body main .stakeholders .stakeholder1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main .stakeholders .imgStakeholder1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main .stakeholders .stakeholder2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main .stakeholders .imgStakeholder2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main .ventajas {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    justify-content: center;
+  }
+  body main .ventajas .h2Ventajas {
     grid-column: 1;
     grid-row: 1;
+  }
+  body main .ventajas .h2Ventajas h2 {
+    font-size: 20px;
+  }
+  body main .ventajas #imgVenaja1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body main .ventajas #imgVenaja1 img {
+    height: 150px;
+    width: 150px;
+  }
+  body main .ventajas #tituloVentaja1 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  body main .ventajas #tituloVentaja1 h2 {
+    font-size: 15px;
+  }
+  body main .ventajas #pVentaja1 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  body main .ventajas #pVentaja1 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  body main .ventajas #imgVenaja2 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  body main .ventajas #imgVenaja2 img {
+    height: 150px;
+    width: 150px;
+  }
+  body main .ventajas #tituloVentaja2 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  body main .ventajas #tituloVentaja2 h2 {
+    font-size: 15px;
+  }
+  body main .ventajas #pVentaja2 {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  body main .ventajas #pVentaja2 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  body main .ventajas #imgVenaja3 {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  body main .ventajas #imgVenaja3 img {
+    height: 150px;
+    width: 150px;
+  }
+  body main .ventajas #tituloVentaja3 {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  body main .ventajas #tituloVentaja3 h2 {
+    font-size: 15px;
+  }
+  body main .ventajas #pVentaja3 {
+    grid-column: 1;
+    grid-row: 10;
+  }
+  body main .ventajas #pVentaja3 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  body main .contacto {
+    justify-content: center;
+  }
+  body main .contacto .h2Contacto h2 {
     text-align: center;
-    font-family: "Space Mono", monospace;
-    font-size: 30px;
-    color: #5EA763;
+    font-size: 20px;
   }
-  body main .stakeholders .stkholder1 {
-    grid-column: 1;
+  body main .contacto .pContacto p {
+    font-size: 15px;
+  }
+  body main .contacto .ulContacto li {
+    font-size: 15px;
+  }
+  body main .nosotros {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  body main .nosotros .h2Nosotros {
+    grid-column: 1/span 2;
+    grid-row: 1;
+  }
+  body main .nosotros .h2Nosotros h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  body main .nosotros #imgChristyan {
+    grid-column: 1/span 2;
     grid-row: 2;
-    display: flex;
-    align-items: center;
-    border: 1px solid black;
   }
-  body main .stakeholders #imgStkholder1 {
-    grid-column: 1;
-    grid-row: 2;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-position: center;
-    opacity: 0.3;
+  body main .nosotros #imgChristyan img {
+    height: 150px;
+    width: 150px;
   }
-  body main .stakeholders .stkholder2 {
-    grid-column: 1;
+  body main .nosotros #nombreChristyan {
+    grid-column: 1/span 2;
     grid-row: 3;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    border: 1px solid black;
   }
-  body main .stakeholders #imgStkholder2 {
-    grid-column: 1;
-    grid-row: 3;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-position: center;
-    opacity: 0.3;
+  body main .nosotros #nombreChristyan p {
+    font-size: 15px;
+  }
+  body main .nosotros #imgVictor {
+    grid-column: 1/span 2;
+    grid-row: 4;
+  }
+  body main .nosotros #imgVictor img {
+    height: 150px;
+    width: 150px;
+  }
+  body main .nosotros #nombreVictor {
+    grid-column: 1/span 2;
+    grid-row: 5;
+  }
+  body main .nosotros #nombreVictor p {
+    font-size: 15px;
+  }
+  body main .nosotros .pNosotros {
+    grid-column: 1/span 2;
+    grid-row: 6;
+  }
+  body main .nosotros .pNosotros p {
+    font-size: 15px;
+    margin-bottom: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
