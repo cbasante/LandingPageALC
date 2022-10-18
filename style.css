@@ -152,9 +152,11 @@ body main .stakeholders h2 {
 body main .stakeholders .stkholder1 {
   grid-column: 1;
   grid-row: 2;
+  margin-left: 10px;
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
 }
 body main .stakeholders #imgStkholder1 {
   grid-column: 1;
@@ -164,14 +166,16 @@ body main .stakeholders #imgStkholder1 {
   background-size: 100%;
   background-position: center;
   opacity: 0.3;
+  border: 1px solid black;
 }
 body main .stakeholders .stkholder2 {
   grid-column: 1;
   grid-row: 3;
+  margin-left: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  border: 1px solid black;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
 }
 body main .stakeholders #imgStkholder2 {
   grid-column: 1;
@@ -181,4 +185,5 @@ body main .stakeholders #imgStkholder2 {
   background-size: 100%;
   background-position: center;
   opacity: 0.3;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
