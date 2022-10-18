@@ -139,7 +139,7 @@ body main .stakeholders {
   justify-content: center;
   display: grid;
   grid-template-columns: 500px;
-  grid-template-rows: 50px 300px 250px;
+  grid-template-rows: auto 300px 300px;
 }
 body main .stakeholders h2 {
   grid-column: 1;
@@ -150,15 +150,20 @@ body main .stakeholders h2 {
   color: #5EA763;
 }
 body main .stakeholders .stkholder1 {
-  margin-top: 50px;
   grid-column: 1;
   grid-row: 2;
   display: flex;
   align-items: center;
-  background: url("images/Cancha Atenas.jpg");
+  border: 1px solid black;
+}
+body main .stakeholders #imgStkholder1 {
+  grid-column: 1;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
   background-size: 100%;
   background-position: center;
-  border: 1px solid black;
+  opacity: 0.3;
 }
 body main .stakeholders .stkholder2 {
   grid-column: 1;
@@ -166,8 +171,14 @@ body main .stakeholders .stkholder2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: url("images/Futboleros.jpg");
+  border: 1px solid black;
+}
+body main .stakeholders #imgStkholder2 {
+  grid-column: 1;
+  grid-row: 3;
+  height: 100%;
+  width: 100%;
   background-size: 100%;
   background-position: center;
-  border: 1px solid black;
+  opacity: 0.3;
 }/*# sourceMappingURL=style.css.map */
